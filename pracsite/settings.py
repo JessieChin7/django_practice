@@ -27,8 +27,8 @@ SECRET_KEY = 'django-insecure-&ic&41+j6z$2km27nm#wgor)r-1to7a_ppg+(&gg_b2d9tbok(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cat-test-vm.iottalktw.com','cat-jessie-vm.iottalktw.com']
-
+ALLOWED_HOSTS = ['<104.208.76.228/cat-jessie-vm.iottalktw.com>','*']
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 # Application definition
 
