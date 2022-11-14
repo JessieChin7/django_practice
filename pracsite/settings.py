@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-&ic&41+j6z$2km27nm#wgor)r-1to7a_ppg+(&gg_b2d9tbok(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cat-test-vm.iottalktw.com','cat-jessie-vm.iottalktw.com']
 
 
 # Application definition
@@ -41,11 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'media_page',
     'rest_framework',
-    'django_filters',
 ]
 
 REST_FRAMEWORK = {
-    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+    # 'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
 
 MIDDLEWARE = [
@@ -101,11 +100,11 @@ WSGI_APPLICATION = 'pracsite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test',
-        'USER': 'root',
-        'PASSWORD': 'Jcnuyuanbird2',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'NAME': 'django_db',
+        'USER': 'my_user',
+        'PASSWORD': '20010727',
+        # 'HOST': '127.0.0.1',
+        # 'PORT': '3306',
     }
 }
 

@@ -13,7 +13,6 @@ from rest_framework import viewsets
 from rest_framework import renderers
 from django.shortcuts import get_object_or_404
 from pracsite import settings
-# from django_filters.rest_framework import DjangoFilterBackend
 ###API###
 
 
@@ -36,8 +35,6 @@ class PhotoViewSet(viewsets.ModelViewSet):
     """
     queryset = Photo.objects.all()
     serializer_class = PhotoSerializer
-    # filter_backends = [DjangoFilterBackend]
-    # filterset_fields = ['media_filename']
 
     def overwrite(self, serializer, instance):
         new_instance = self.request.data
